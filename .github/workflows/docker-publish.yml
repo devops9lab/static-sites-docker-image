@@ -66,10 +66,8 @@ jobs:
           flavor: |
             latest=auto
           tags: |
-            # tag event
-            type=ref,event=tag
-            # minimal
-            type=semver,pattern={{version}}
+            # branch event
+            type=ref,event=branch
 
       # Build and push Docker image with Buildx (don't push on PR)
       # https://github.com/docker/build-push-action
