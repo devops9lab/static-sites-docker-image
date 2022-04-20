@@ -65,6 +65,8 @@ jobs:
           images: ${{ env.REGISTRY }}/${{ env.ACCOUNT }}/nginx-${{ matrix.site }}
           flavor: |
             latest=auto
+            prefix=
+            suffix=
           tags: |
             # branch event
             type=ref,event=branch
