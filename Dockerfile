@@ -1,4 +1,4 @@
-FROM nginx:1.21.6-alpine
+FROM nginxinc/nginx-unprivileged:1.20-alpine
 
 ARG SITE
 
